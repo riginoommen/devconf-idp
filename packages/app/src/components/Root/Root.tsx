@@ -73,9 +73,9 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarItem icon={CategoryIcon} to="catalog" text="Catalog">
           <SidebarSubmenu title="Catalog">
             <SidebarSubmenuItem
-              title="Domains"
-              to="catalog?filters[kind]=domain"
-              icon={useApp().getSystemIcon('kind:domain')}
+              title="Templates"
+              to="catalog?filters[kind]=template"
+              icon={useApp().getSystemIcon('scaffolder')}
             />
             <SidebarSubmenuItem
               title="Systems"
@@ -91,6 +91,11 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
               title="APIs"
               to="catalog?filters[kind]=api"
               icon={useApp().getSystemIcon('kind:api')}
+            />
+            <SidebarSubmenuItem
+              title="Domains"
+              to="catalog?filters[kind]=domain"
+              icon={useApp().getSystemIcon('kind:domain')}
             />
             <SidebarDivider />
             <SidebarSubmenuItem
